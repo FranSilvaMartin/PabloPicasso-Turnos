@@ -14,8 +14,9 @@ dentro de la carpeta.
 <img src="assets/carpetas.png" style="width: 230px"/>
 
 ```
-Antes de ver la página debes importar la base de datos dentro de la carpeta 'ConfiguracionDB'
-están los dos SQLs para insertarlo en la base de datos. La base de datos se crea automaticamente
+IMPORTANTE: Debes importar la base de datos, en las carpetas de la página web hay una
+carpeta con el nombre 'ConfiguraciónDB' debes entrar dentro y estarán los dos
+ficheros SQLs para insertarlo en la base de datos.
 ```
 
 Volvemos ha abrir laragon y le damos a la opción de 'Start all',
