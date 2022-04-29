@@ -12,6 +12,12 @@ Ahora vamos a poner la página en la siguiente ruta: 'C:\laragon\www' y colocamo
 dentro de la carpeta.
 
 <img src="assets/carpetas.png" style="width: 230px"/>
+
+```
+Antes de ver la página debes importar la base de datos dentro de la carpeta 'ConfiguracionDB'
+están los dos SQLs para insertarlo en la base de datos. La base de datos se crea automaticamente
+```
+
 Volvemos ha abrir laragon y le damos a la opción de 'Start all',
 para poder ver la página en nuestro navegador debemos escribir la
 siguiente URL: 
