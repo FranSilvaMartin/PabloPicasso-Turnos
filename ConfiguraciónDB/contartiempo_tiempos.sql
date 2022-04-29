@@ -1,0 +1,56 @@
+CREATE DATABASE  IF NOT EXISTS `contartiempo` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `contartiempo`;
+-- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
+--
+-- Host: localhost    Database: contartiempo
+-- ------------------------------------------------------
+-- Server version	5.7.33
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tiempos`
+--
+
+DROP TABLE IF EXISTS `tiempos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tiempos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `IDUsuario` int(11) NOT NULL,
+  `Tiempo` varchar(45) NOT NULL,
+  `Entrada` varchar(60) DEFAULT NULL,
+  `Salida` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=218 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tiempos`
+--
+
+LOCK TABLES `tiempos` WRITE;
+/*!40000 ALTER TABLE `tiempos` DISABLE KEYS */;
+INSERT INTO `tiempos` VALUES (204,8,'00h:01m:10s','31/3/2022 - 12:14','31/3/2022 - 12:16'),(205,8,'00h:00m:22s','31/3/2022 - 12:16','31/3/2022 - 12:17'),(206,8,'00h:00m:05s','31/3/2022 - 12:17','31/3/2022 - 12:17'),(207,8,'00h:02m:30s','31/3/2022 - 12:17','31/3/2022 - 12:20'),(208,9,'00h:01m:04s','31/3/2022 - 12:20','31/3/2022 - 12:21'),(209,9,'00h:00m:12s','31/3/2022 - 12:21','31/3/2022 - 12:21'),(210,9,'00h:00m:18s','31/3/2022 - 12:21','31/3/2022 - 12:21'),(211,9,'00h:00m:37s','31/3/2022 - 12:21','31/3/2022 - 12:22'),(212,8,'00h:00m:05s','31/3/2022 - 12:22','31/3/2022 - 12:22'),(213,8,'00h:02m:35s','31/3/2022 - 12:23','31/3/2022 - 12:25'),(214,8,'00h:00m:15s','31/3/2022 - 12:25','31/3/2022 - 12:26'),(215,8,'00h:01m:05s','31/3/2022 - 12:26','31/3/2022 - 12:27'),(216,8,'00h:00m:04s','31/3/2022 - 12:28','31/3/2022 - 12:28'),(217,8,'00h:00m:11s','31/3/2022 - 14:15','31/3/2022 - 14:15');
+/*!40000 ALTER TABLE `tiempos` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-04-01  1:31:15
